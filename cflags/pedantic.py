@@ -1,2 +1,2 @@
 def configure(ctx):
-    ctx.env.append_value('CFLAGS', '-pedantic')
+    ctx.env.append_unique('CFLAGS', '-pedantic')

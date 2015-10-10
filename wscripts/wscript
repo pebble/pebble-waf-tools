@@ -1,9 +1,8 @@
+"""
+This file is the default set of rules to compile a Pebble project.
 
-#
-# This file is the default set of rules to compile a Pebble project.
-#
-# Feel free to customize this to your needs.
-#
+Feel free to customize this to your needs.
+"""
 
 import os
 import os.path
@@ -21,7 +20,9 @@ def configure(ctx):
 def build(ctx):
     ctx.load('pebble_sdk')
 
-    build_worker = os.path.exists('worker_src')
+    # This is an improvement over the Pebble SDK wscript, but has not been deployed
+    build_worker = ctx.path.find_node('worker_src') 
+    
     binaries = []
 
     for p in ctx.env.TARGET_PLATFORMS:

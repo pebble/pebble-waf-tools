@@ -1,5 +1,8 @@
-# Modified wscript 
-# This wscript concatenates multiple JS files together in alphabetical filename order
+"""
+Modified wscript 
+
+This wscript concatenates multiple JS files together in alphabetical filename order
+"""
 
 import os
 import os.path

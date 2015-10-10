@@ -1,6 +1,9 @@
-# Modified wscript
-# This wscript compiles source from platform subfolders, allowing support of unique
-# source code per platform
+"""
+Modified wscript
+
+This wscript compiles source from platform subfolders, allowing support of unique
+source code per platform
+"""
 
 import os
 import os.path
